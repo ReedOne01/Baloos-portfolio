@@ -96,7 +96,7 @@ nav img {
   transition: 0.4s;
 }
 .heroSection.active {
-  margin-top: 15rem;
+  margin-top: 25rem;
 }
 .heroSection .titleCont {
   width: 45%;
@@ -461,10 +461,7 @@ nav img {
   height: 320px;
 }
 .project .projectBox .box .textCont {
-  /* justify-self: baseline; */
   align-self: last baseline;
-  /* border: 1px solid red; */
-  /* width: 400px; */
 }
 .project .projectBox .box .textCont h2 {
   /* font-size: 2; */
@@ -693,6 +690,202 @@ nav img {
   }
   .project .projectBox .box {
     display: block;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 42.5%;
+  }
+  .landing {
+    padding: 2%;
+    height: auto;
+  }
+  nav img {
+    height: 50px;
+    width: 50px;
+  }
+  .navContent {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    background-color: #285953;
+    top: 75px;
+    gap: 10px;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    transition: 0.6s;
+    padding: 0.5rem 1rem;
+  }
+  /* .navBar-toggler .bar.active {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navBar-toggler.active .bar:nth-child(3) {
+    transform: translateY(8px) rotate(-45deg);
+  } */
+  .navContent ul {
+    display: grid;
+    width: 100%;
+    gap: 5px;
+  }
+  .navContent ul a li {
+    padding: 0.5rem 2rem;
+  }
+  nav .navBar-toggler {
+    display: grid !important;
+  }
+  nav .navBar-toggler.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  nav .navBar-toggler.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    width: 0.8rem;
+    /* margin-left: 10px; */
+    background-color: red;
+  }
+  nav .navBar-toggler.active .bar:nth-child(3) {
+    width: 0.8rem;
+    background-color: red;
+
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .heroSection {
+    /* display: block !important; */
+    flex-direction: column !important;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+  }
+  .heroSection .titleCont {
+    width: auto;
+    height: auto;
+    padding: 2%;
+    /* display: flex; */
+    justify-content: center;
+    /* font-size: 22px; */
+  }
+  .heroSection .titleCont .title {
+    font-size: 32px;
+  }
+
+  .heroSection .position {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroSection .firstImage {
+    position: unset;
+    height: auto;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    margin: 4rem 0;
+    padding-left: 5%;
+  }
+  .heroSection .firstImage img {
+    height: auto;
+    width: 90%;
+  }
+  .heroSection .secImage {
+    left: 16%;
+    right: 10%;
+    position: absolute;
+    bottom: 9%;
+    height: 21%;
+    width: 63%;
+  }
+  .about {
+    height: auto;
+  }
+  .about .container {
+    display: block;
+    text-align: centerz;
+  }
+  .about .container .imgCont {
+    height: auto;
+    width: auto;
+    margin-top: 5rem;
+  }
+  .about .container img {
+    height: 10%;
+    width: 70%;
+  }
+  .about .container .aboutContent h1 {
+    font-size: 32px;
+  }
+  .about .container .aboutContent {
+    width: 100%;
+    padding: 4%;
+  }
+  .about .container .aboutContent p {
+    font-size: 14px;
+  }
+  .about .container .aboutContent ul li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .work {
+    height: 70vh;
+    width: auto;
+  }
+  .project .projectBox .box {
+    display: block;
+    text-align: center;
+  }
+  .project .projectBox .box img {
+    width: 320px;
+    height: 170px;
+  }
+  .project .projectBox .box:nth-child(3) {
+    display: none;
+  }
+  .project .projectBox .box:nth-last-child(1) {
+    display: none;
+  }
+  .project .projectBox .box .textCont h2 {
+    font-size: 28px;
+    margin-top: 1rem;
+  }
+  .project .projectBox .box .textCont p {
+    font-size: 16px;
+    width: 85%;
+    margin-left: 4rem;
+  }
+  .project .projectBox .box .textCont button {
+    width: auto;
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .footerContainer {
+    padding: 12%;
+  }
+  .footerContainer .firstCont {
+    display: block;
+    padding: 25% 10%;
+    border-radius: 5px;
+  }
+  .footerContainer .firstCont .text h3 {
+    font-size: 20px;
+  }
+  .footerContainer .firstCont .text p {
+    font-size: 12px;
+  }
+  .footerContainer .secondCont {
+    padding: 14%;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .footerContainer .firstCont button {
+    padding: 4% 8%;
+    font-size: 18px;
+    align-self: flex-end;
+    justify-self: center;
+    margin-top: 4rem;
+    margin-left: 10rem;
   }
 }
 
