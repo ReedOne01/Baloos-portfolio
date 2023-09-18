@@ -529,7 +529,7 @@ nav img {
 }
 .footerContainer .secondCont .icons {
   display: flex;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
   justify-content: center;
   width: 50%;
 }
@@ -648,7 +648,6 @@ nav img {
     position: unset;
     height: auto;
     width: 100%;
-    border: 1px solid yellow;
     align-self: center;
     justify-self: center;
     margin: 4rem 0;
@@ -671,14 +670,12 @@ nav img {
   }
   .about .container {
     display: block;
-    border: 1px solid red;
   }
   .about .container .imgCont {
     height: auto;
     width: auto;
     margin-top: 5rem;
     margin-left: 7rem;
-    border: 1px solid yellow;
   }
   .about .container img {
     height: 10%;
@@ -863,7 +860,7 @@ nav img {
     padding: 12%;
   }
   .footerContainer .firstCont {
-    display: block;
+    flex-direction: column;
     padding: 25% 10%;
     border-radius: 5px;
   }
@@ -882,10 +879,9 @@ nav img {
   .footerContainer .firstCont button {
     padding: 4% 8%;
     font-size: 18px;
-    align-self: flex-end;
+    align-self: center;
     justify-self: center;
     margin-top: 4rem;
-    margin-left: 10rem;
   }
 }
 
