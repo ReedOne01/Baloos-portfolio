@@ -6,23 +6,23 @@
 }
 
 /* .container {
-  background-color: red;
-  container-type: inline-size;
-  margin-inline: auto;
-  width: 100%;
-}
-.container[data-type="narrow"] {
-  max-width: 350px;
-  background: yellow;
-}
-.container[data-type="medium"] {
-  max-width: 600px;
-  background: blue;
-}
-.container[data-type="wide"] {
-  max-width: 350px;
-  background: white;
-} */
+    background-color: red;
+    container-type: inline-size;
+    margin-inline: auto;
+    width: 100%;
+  }
+  .container[data-type="narrow"] {
+    max-width: 350px;
+    background: yellow;
+  }
+  .container[data-type="medium"] {
+    max-width: 600px;
+    background: blue;
+  }
+  .container[data-type="wide"] {
+    max-width: 350px;
+    background: white;
+  } */
 .landing {
   height: 100%;
   /* padding-bottom: %; */
@@ -178,24 +178,6 @@ nav img {
     background-image: url(./images/heroAnime2.png);
   }
 }
-/* .heroSection .secImage img {
-  height: 230px;
-  width: 370px;
-} */
-/* .heroSection .thirdImage {
-  position: absolute;
-  bottom: 20px;
-  right: 80px; */
-/* border-radius: 35%; */
-/* border: 5px solid gray; */
-/* height: auto; */
-/* width: 350px; */
-/* z-index: -1; */
-/* } */
-/* .heroSection .thirdImage img {
-  height: 350px;
-  width: 330px;
-} */
 .heroSection .hero-anime {
   position: absolute;
   right: 42%;
@@ -267,8 +249,8 @@ nav img {
 }
 .about .container {
   /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  transform: translate(0%, 50%); */
+    grid-template-columns: 1fr 1fr;
+    transform: translate(0%, 50%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,14 +266,14 @@ nav img {
   height: auto;
   /* border: 1px solid red; */
   /* width: 50%;
-  height: 30%; */
+    height: 30%; */
 }
 .about .container img {
   width: 85%;
   /* border: 1px solid red; */
   /* height: 50%; */
   /* height: 450px;
-  width: 360px; */
+    width: 360px; */
 }
 .about .container .aboutContent {
   /* flex: 1; */
@@ -583,12 +565,6 @@ nav img {
     transition: 0.6s;
     padding: 0.5rem 1rem;
   }
-  /* .navBar-toggler .bar.active {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .navBar-toggler.active .bar:nth-child(3) {
-    transform: translateY(8px) rotate(-45deg);
-  } */
   .navContent ul {
     display: grid;
     width: 100%;
@@ -601,19 +577,13 @@ nav img {
     display: grid !important;
   }
   nav .navBar-toggler.active .bar:nth-child(2) {
-    opacity: 0;
+    background-color: red;
   }
   nav .navBar-toggler.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    width: 0.8rem;
-    /* margin-left: 10px; */
     background-color: red;
   }
   nav .navBar-toggler.active .bar:nth-child(3) {
-    width: 0.8rem;
     background-color: red;
-
-    transform: translateY(-8px) rotate(-45deg);
   }
   .heroSection {
     /* display: block !important; */
@@ -643,8 +613,8 @@ nav img {
   }
   .heroSection .firstImage {
     /* right: 0;
-    left: 0;
-    bottom: 0; */
+      left: 0;
+      bottom: 0; */
     position: unset;
     height: auto;
     width: 100%;
@@ -689,71 +659,15 @@ nav img {
     display: block;
   }
 }
-@media (max-width: 420px) {
-  html {
-    font-size: 42.5%;
-  }
-  .landing {
-    padding: 2%;
-    height: auto;
-  }
-  nav img {
-    height: 50px;
-    width: 50px;
-  }
-  .navContent {
-    display: grid;
-    position: absolute;
-    width: 100%;
-    background-color: #285953;
-    top: 75px;
-    gap: 10px;
-    left: 0;
-    transform: translateX(-100%);
-    z-index: 1;
-    transition: 0.6s;
-    padding: 0.5rem 1rem;
-  }
-  /* .navBar-toggler .bar.active {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .navBar-toggler.active .bar:nth-child(3) {
-    transform: translateY(8px) rotate(-45deg);
-  } */
-  .navContent ul {
-    display: grid;
-    width: 100%;
-    gap: 5px;
-  }
-  .navContent ul a li {
-    padding: 0.5rem 2rem;
-  }
-  nav .navBar-toggler {
-    display: grid !important;
-  }
-  nav .navBar-toggler.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  nav .navBar-toggler.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    width: 0.8rem;
-    /* margin-left: 10px; */
-    background-color: red;
-  }
-  nav .navBar-toggler.active .bar:nth-child(3) {
-    width: 0.8rem;
-    background-color: red;
-
-    transform: translateY(-8px) rotate(-45deg);
-  }
+@media (max-width: 558px) {
   .heroSection {
-    /* display: block !important; */
     flex-direction: column !important;
     width: 100%;
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: 2% 5%;
+    /* padding: 5% 0%; */
+    padding-left: 0;
   }
   .heroSection .titleCont {
     width: auto;
@@ -786,12 +700,12 @@ nav img {
     width: 90%;
   }
   .heroSection .secImage {
-    left: 16%;
+    left: 12.2%;
     right: 10%;
     position: absolute;
-    bottom: 9%;
-    height: 21%;
-    width: 63%;
+    bottom: 10%;
+    height: 24.5%;
+    width: 65.5%;
   }
   .about {
     height: auto;
@@ -830,7 +744,8 @@ nav img {
   }
   .project .projectBox .box {
     display: block;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 12rem;
   }
   .project .projectBox .box img {
     width: 320px;
@@ -844,16 +759,16 @@ nav img {
   }
   .project .projectBox .box .textCont h2 {
     font-size: 28px;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
   .project .projectBox .box .textCont p {
-    font-size: 16px;
+    font-size: 14px;
     width: 85%;
-    margin-left: 4rem;
+    margin-left: 0;
   }
   .project .projectBox .box .textCont button {
     width: auto;
-    padding: 15px 20px;
+    padding: 12px 25px;
     font-size: 14px;
   }
   .footerContainer {
@@ -861,7 +776,7 @@ nav img {
   }
   .footerContainer .firstCont {
     flex-direction: column;
-    padding: 25% 10%;
+    padding: 22% 10%;
     border-radius: 5px;
   }
   .footerContainer .firstCont .text h3 {
@@ -884,15 +799,49 @@ nav img {
     margin-top: 4rem;
   }
 }
+@media (max-width: 420px) {
+  html {
+    font-size: 42.5%;
+  }
+  .landing {
+    padding: 2%;
+    height: auto;
+  }
+  nav img {
+    height: 50px;
+    width: 50px;
+  }
+  .navContent {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    background-color: #285953;
+    top: 75px;
+    gap: 10px;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+    transition: 0.6s;
+    padding: 0.5rem 1rem;
+  }
+
+  .heroSection {
+    /* display: block !important; */
+    flex-direction: column !important;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+  }
+}
 
 nav .navBar-toggler {
   display: none;
   height: 30px;
-  margin: 18px 10px 0 0;
   cursor: pointer;
   background-color: #feef06;
-  padding-top: 0.9rem;
-  padding-bottom: 1.2rem;
+  padding: 1.5rem 1rem;
   width: 30px;
   align-items: center;
   justify-content: center;
