@@ -62,7 +62,6 @@ nav img {
   text-align: center;
   display: flex;
   align-items: center;
-  /* transition: all 2s ease-in-out; */
 }
 
 .navContent ul a li {
@@ -92,7 +91,6 @@ nav img {
   align-items: center;
   padding: 9% 0;
   padding-left: 5%;
-  /* border: 1px solid white; */
   transition: 0.4s;
 }
 .heroSection.active {
@@ -141,11 +139,7 @@ nav img {
 .heroSection .firstImage {
   position: relative;
   width: 100%;
-  /* border: 1px saddlebrown solid; */
   align-content: flex-start;
-  /* border: 1px solid red;  */
-  /* z-index: -1; */
-  /* border: 1px solid red; */
 }
 .heroSection .secImage {
   position: absolute;
@@ -153,12 +147,9 @@ nav img {
   right: 10.8%;
   background-position: center;
   background-size: cover;
-  /* background-color: black; */
   height: 33%;
   width: 28%;
-  /* z-index: 1000; */
   animation: changer 35s infinite ease-in-out;
-  /* border: 1px solid red; */
   border-radius: 8%;
 }
 @keyframes changer {
@@ -407,8 +398,6 @@ nav img {
 .work .workContent .imgCont img {
   height: 26rem;
   width: 20rem;
-  /* background-color: black; */
-  /* border-radius: 20px; */
 }
 
 .project {
@@ -420,7 +409,6 @@ nav img {
 }
 .project .projectBox {
   height: 100%;
-  /* border: 1px solid red; */
 }
 .project .projectBox > h1 {
   font-weight: 500;
@@ -446,7 +434,6 @@ nav img {
   align-self: last baseline;
 }
 .project .projectBox .box .textCont h2 {
-  /* font-size: 2; */
   font-family: Roboto;
   color: #059a89;
   font-size: 38px;
@@ -540,6 +527,59 @@ nav img {
     margin-bottom: 4%;
   }
 }
+@media (max-width: 768px) {
+  .landing {
+    padding: 3%;
+  }
+  nav {
+    padding: 1% 3%;
+  }
+  .navContent {
+    width: 100%;
+    text-align: center;
+  }
+  .navContent ul {
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  .heroSection {
+    padding: 3% 0;
+    padding-left: 3%;
+  }
+  .heroSection .secImage {
+    height: 27.5%;
+    bottom: 28%;
+    width: 30%;
+  }
+  .about .container .aboutContent ul li {
+    font-weight: 500;
+    color: #000000;
+  }
+  .project .projectBox .box img {
+    width: 320px;
+    height: 200px;
+  }
+  .project .projectBox .box .textCont h2 {
+    font-size: 30px;
+  }
+  .project .projectBox .box .textCont p {
+    font-size: 16px;
+  }
+  .project .projectBox .box .textCont button {
+    width: auto;
+    padding: 10px 25px;
+  }
+  .footerContainer .firstCont button {
+    font-size: 18px;
+  }
+  .footerContainer .firstCont .text h3 {
+    font-size: 22px;
+  }
+  .footerContainer .firstCont .text p {
+    font-size: 14px;
+  }
+}
 @media (max-width: 670px) {
   html {
     font-size: 55%;
@@ -556,7 +596,8 @@ nav img {
     display: grid;
     position: absolute;
     width: 100%;
-    background-color: #285953;
+
+    background: linear-gradient(to bottom, #0b4254, #1f8572);
     top: 75px;
     gap: 10px;
     left: 0;
@@ -585,8 +626,13 @@ nav img {
   nav .navBar-toggler.active .bar:nth-child(3) {
     background-color: red;
   }
+  .heroSection .hero-anime,
+  .hero-anime1,
+  .hero-anime2,
+  .hero-anime3 {
+    display: none;
+  }
   .heroSection {
-    /* display: block !important; */
     flex-direction: column !important;
     width: 100%;
     height: auto;
@@ -833,6 +879,12 @@ nav img {
     align-items: center;
     justify-content: center;
     padding: 2% 5%;
+  }
+  .heroSection .secImage {
+    left: 17%;
+    bottom: 8.5%;
+    height: 21.6%;
+    width: 61.5%;
   }
 }
 
