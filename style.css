@@ -881,10 +881,10 @@ nav img {
     padding: 2% 5%;
   }
   .heroSection .secImage {
-    left: 17%;
-    bottom: 8.5%;
-    height: 21.6%;
-    width: 61.5%;
+    left: 16.5%;
+    bottom: 8.6%;
+    height: 19.9%;
+    width: 62.4%;
   }
 }
 
@@ -905,7 +905,7 @@ nav .navBar-toggler .bar {
   background-color: #1f201f;
   border-radius: 10%;
   transition: 0.4s;
-  margin-bottom: 2.5px;
+  /* margin-bottom: 2.5px; */
 }
 
 .navContent.active {
