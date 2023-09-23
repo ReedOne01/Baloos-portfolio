@@ -515,6 +515,13 @@ nav img {
   /* margin-top: 1rem; */
   /* margin-bottom: 3rem; */
 }
+@media (max-width: 1027px) {
+  .heroSection .secImage {
+    height: 35%;
+    /* right: 12.8%; */
+    bottom: 22%;
+  }
+}
 @media (max-width: 939px) {
   html {
     font-size: 62.5%;
@@ -525,6 +532,27 @@ nav img {
   nav {
     padding: 0 1rem;
     margin-bottom: 4%;
+  }
+}
+@media (max-width: 936px) {
+  .heroSection .secImage {
+    height: 23%;
+    right: 11%;
+    bottom: 31%;
+  }
+}
+@media (max-width: 870px) {
+  .landing {
+    padding: 4%;
+  }
+  .heroSection {
+    padding: 4% 2%;
+    /* border: 1px solid red; */
+  }
+  .heroSection .secImage {
+    height: 27%;
+    right: 12.8%;
+    bottom: 29%;
   }
 }
 @media (max-width: 768px) {
@@ -644,9 +672,7 @@ nav img {
     width: auto;
     height: auto;
     padding: 2%;
-    /* display: flex; */
     justify-content: center;
-    /* font-size: 22px; */
   }
   .heroSection .titleCont .title {
     font-size: 32px;
@@ -658,9 +684,6 @@ nav img {
     justify-content: center;
   }
   .heroSection .firstImage {
-    /* right: 0;
-      left: 0;
-      bottom: 0; */
     position: unset;
     height: auto;
     width: 100%;
@@ -674,12 +697,17 @@ nav img {
     width: 90%;
   }
   .heroSection .secImage {
-    left: 13%;
-    right: 10%;
-    position: absolute;
-    bottom: 13%;
-    height: 32%;
-    width: 70%;
+    height: 25.8%;
+    right: 21.5%;
+    width: 62%;
+    bottom: 10.5%;
+  }
+
+  .project .projectBox .box:nth-child(3) {
+    display: none;
+  }
+  .project .projectBox .box:nth-last-child(1) {
+    display: none;
   }
   .about {
     height: auto;
@@ -797,12 +825,7 @@ nav img {
     width: 320px;
     height: 170px;
   }
-  .project .projectBox .box:nth-child(3) {
-    display: none;
-  }
-  .project .projectBox .box:nth-last-child(1) {
-    display: none;
-  }
+
   .project .projectBox .box .textCont h2 {
     font-size: 28px;
     margin-top: 5rem;
@@ -905,7 +928,7 @@ nav .navBar-toggler .bar {
   background-color: #1f201f;
   border-radius: 10%;
   transition: 0.4s;
-  /* margin-bottom: 2.5px; */
+  margin-bottom: 2px;
 }
 
 .navContent.active {
