@@ -662,10 +662,10 @@ nav img {
     display: block;
     padding: 5% 8%;
   }
+
   .about .container .imgCont {
     margin-top: 5rem;
     margin-bottom: 3rem;
-    border: 1px solid red;
     align-items: center;
   }
   .about .container img {
@@ -676,8 +676,9 @@ nav img {
   .about .container .aboutContent {
     width: 100%;
     padding: 0;
-    text-align: center;
+    text-align: justify;
   }
+
   .project .projectBox .box {
     display: block;
   }
@@ -739,9 +740,9 @@ nav img {
     width: auto;
     margin-top: 5rem;
   }
+
   .about .container img {
-    height: 10%;
-    width: 70%;
+    margin-left: 5rem;
   }
   .about .container .aboutContent h1 {
     font-size: 32px;
