@@ -594,12 +594,15 @@ nav img {
   }
   nav .navBar-toggler.active .bar:nth-child(2) {
     background-color: red;
+    opacity: 0;
   }
   nav .navBar-toggler.active .bar:nth-child(1) {
     background-color: red;
+    transform: translateY(3px) rotate(-45deg);
   }
   nav .navBar-toggler.active .bar:nth-child(3) {
     background-color: red;
+    transform: translateY(-4px) rotate(45deg);
   }
   .heroSection .hero-anime,
   .hero-anime1,
