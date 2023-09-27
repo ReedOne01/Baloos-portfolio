@@ -164,7 +164,7 @@ nav img {
 .heroSection .hero-anime1 {
   position: absolute;
   right: 5%;
-  top: 40%;
+  bottom: 20%;
   animation: ball 1s linear infinite;
 }
 .heroSection .hero-anime1 img {
@@ -394,14 +394,19 @@ nav img {
 .project .projectBox .box .textCont button {
   width: 12rem;
   padding: 16px 25px;
-  color: white;
   border: none;
   font-size: 16px;
   border-radius: 25px;
   background-color: #059989;
 }
+.project .projectBox .box .textCont button a {
+  text-decoration: none;
+  color: white;
+  padding: 16px 25px;
+}
 .project .projectBox .box .textCont button:hover {
   background-color: #285953;
+  transition: 0.5s linear;
 }
 
 .footerContainer {
@@ -413,9 +418,9 @@ nav img {
   justify-content: space-between;
   align-items: center;
   color: white;
+  gap: 5rem;
   background-color: #0c887a;
   padding: 7% 14%;
-  margin-bottom: 5rem;
 }
 .footerContainer .firstCont .text {
   text-align: center;
@@ -428,13 +433,20 @@ nav img {
 .footerContainer .firstCont .text p {
   font-size: 16px;
 }
+
 .footerContainer .firstCont button {
   border: none;
-  padding: 2% 4%;
   font-size: 24px;
   border-radius: 10px;
   background-color: white !important;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  padding: 2% 5%;
+  width: auto;
+}
+.footerContainer .firstCont button a {
+  color: black;
+  text-decoration: none;
+  padding: 0;
 }
 .footerContainer .secondCont {
   display: flex;
@@ -463,6 +475,7 @@ nav img {
   height: 18px;
   width: 20px;
 }
+
 @media (max-width: 1027px) {
   .heroSection .secImage {
     height: 35%;
@@ -499,6 +512,9 @@ nav img {
     height: 27%;
     right: 12.8%;
     bottom: 29%;
+  }
+  .footerContainer .firstCont {
+    padding: 7%;
   }
 }
 @media (max-width: 768px) {
