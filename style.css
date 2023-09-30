@@ -570,6 +570,81 @@ nav img {
     font-size: 14px;
   }
 }
+@media (max-width: 720px) {
+  .navContent ul {
+    font-size: 12px;
+  }
+  .navContent .navBtn {
+    font-size: 12px;
+  }
+  .heroSection .secImage {
+    height: 43.5%;
+    bottom: 15%;
+    width: 28%;
+    right: 7.5%;
+  }
+  .heroSection .hero-anime,
+  .hero-anime1,
+  .hero-anime2 {
+    display: none;
+  }
+  .heroSection .titleCont {
+    width: 60%;
+    /* border: 1px solid red; */
+  }
+  .heroSection .titleCont .title {
+    width: 100%;
+    font-size: 32px;
+    /* border: 1px solid red; */
+  }
+  .heroSection .titleCont .text {
+    font-size: 12px;
+  }
+  .about .container .imgCont {
+    flex: 1;
+  }
+  .about .container .aboutContent {
+    flex: 1.5;
+  }
+
+  .about .container .aboutContent h1 {
+    font-size: 28px;
+  }
+  .about .container .aboutContent p {
+    font-size: 12px;
+  }
+  .about .container .aboutContent ul li {
+    font-size: 12px;
+  }
+  .work {
+    height: 80vh;
+    padding: 0rem 2rem;
+  }
+  .work .workContent .workContentImg {
+    height: 70%;
+  }
+  .project .projectBox > h1 {
+    font-size: 24px;
+  }
+  .project .projectBox .box .textCont h2 {
+    font-size: 18px;
+  }
+  .project .projectBox .box .textCont p {
+    font-size: 14px;
+  }
+  .project .projectBox .box .textCont button {
+    font-size: 14px;
+  }
+  .footerContainer .firstCont .text h3 {
+    font-size: 18px;
+  }
+  .footerContainer .firstCont .text p {
+    font-size: 12px;
+  }
+  .footerContainer .firstCont button {
+    font-size: 14px;
+  }
+}
 @media (max-width: 670px) {
   html {
     font-size: 55%;
@@ -586,7 +661,6 @@ nav img {
     display: grid;
     position: absolute;
     width: 100%;
-
     background: linear-gradient(to bottom, #0b4254, #1f8572);
     top: 75px;
     gap: 10px;
@@ -620,12 +694,7 @@ nav img {
     background-color: red;
     transform: translateY(-4px) rotate(45deg);
   }
-  .heroSection .hero-anime,
-  .hero-anime1,
-  .hero-anime2,
-  .hero-anime3 {
-    display: none;
-  }
+
   .heroSection {
     flex-direction: column !important;
     width: 100%;
@@ -862,7 +931,6 @@ nav img {
   }
 
   .heroSection {
-    /* display: block !important; */
     flex-direction: column !important;
     width: 100%;
     height: auto;
