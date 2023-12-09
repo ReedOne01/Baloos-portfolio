@@ -55,7 +55,7 @@ body {
 .fixed-navbar {
   position: fixed;
   top: 0;
-  background: white;
+  background: linear-gradient(#ffffff, #d0e4f2);
   left: 0;
   width: 100%;
   z-index: 1;

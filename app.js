@@ -19,7 +19,7 @@ window.addEventListener("scroll", (e) => {
   const scrollHeight = window.pageYOffset;
   const navbarHeight = navbar.getBoundingClientRect().height;
 
-  console.log(navbarHeight, scrollHeight);
+  // console.log(navbarHeight, scrollHeight);
   if (scrollHeight > navbarHeight) {
     navbar.classList.add("fixed-navbar");
     navColor.classList.add("showNavColor");
